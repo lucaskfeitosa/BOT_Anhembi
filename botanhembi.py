@@ -272,29 +272,7 @@ while True:
                             
                             con.commit()
 
-                            pag.goto('http://192.168.1.1/index.html#login')
-                            pag.fill('xpath=//*[@id="txtPwd"]', '4dUA222a')
-                            pag.click('xpath=//*[@id="btnLogin"]')
-                            time.sleep(10)
-                            pag.click('xpath=//*[@id="container"]/div[3]/a[5]/div/img')
-                            pag.click('xpath=//*[@id="frmLan"]/div/ul/li[6]/a')
-                            pag.click('xpath=//*[@id="frmRestoreReset"]/div/div[1]/div/input[1]')
-                            pag.click('xpath=//*[@id="yesbtn"]')
-                            time.sleep(70)
-
-
-
-
-                        except:
-                            pag.goto('http://192.168.1.1/index.html#login')
-                        pag.fill('xpath=//*[@id="txtPwd"]', '4dUA222a')
-                        pag.click('xpath=//*[@id="btnLogin"]')
-                        time.sleep(10)
-                        pag.click('xpath=//*[@id="container"]/div[3]/a[5]/div/img')
-                        pag.click('xpath=//*[@id="frmLan"]/div/ul/li[6]/a')
-                        pag.click('xpath=//*[@id="frmRestoreReset"]/div/div[1]/div/input[1]')
-                        pag.click('xpath=//*[@id="yesbtn"]')
-                        time.sleep(70)
+                            
                        
                        
                         
