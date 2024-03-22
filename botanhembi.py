@@ -18,23 +18,7 @@ while True:
         pag = nav.new_page()
         
         try:    
-                # pag.goto('https://meuip.com.br/tools-geo.php', timeout=600000)
-    
-    
-                # time.sleep(3)  # Aguarde alguns segundos para a página renderizar
-    
-                # xpath_expression = 'xpath=//*[@id="content"]/div[1]/div[3]/div/div/div/div[2]'  
-                # element = pag.query_selector(xpath_expression)
-                # print(element)
-    
-                # if element:
-        
-                #     texto_elemento = element.inner_text()
-
-        
-                #     texto_esperado = 'São Paulo'
-
-                    # if texto_esperado in texto_elemento:
+                
                         try:
                        
                             pag.goto('https://www.google.com.br/?hl=pt-BR', timeout=600000)
@@ -91,7 +75,7 @@ while True:
                         cep = cep_element.text_content()
                         numero_element = pag.locator('xpath=//*[@id="numero"]/span[1]')
                         numero = numero_element.text_content()                       
-                        pag.goto('https://leadsolution.g2afse.com/click?pid=73&offer_id=258', timeout=600000)                       
+                        pag.goto('https://portal.anhembi.br/', timeout=600000)                       
                         time.sleep(1)
                         
                         try:
