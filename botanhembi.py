@@ -43,7 +43,6 @@ while True:
                         pag.click('xpath=//*[@id="top-nav"]/li[23]/a')
                         pag.click('xpath=//*[@id="app-wrapper"]/div[2]/div[2]/div[1]/div[1]/div[2]/label')
                         pag.click('xpath=//*[@id="idade"]')
-                        #pag.keyboard.press('ArrowDown')
                         pag.keyboard.press('ArrowDown')
                         pag.keyboard.press('Enter')
                         pag.click('xpath=//*[@id="cep_estado"]')
@@ -81,17 +80,10 @@ while True:
                         try:
                             pag.locator('xpath=//*[@id="btn-cookie"]')
                             pag.keyboard.press('F5')
-                            # pag.wait_for_selector('xpath=//*[@id="header"]/div/button', timeout=40000)
-                            # pag.click('xpath=//*[@id="header"]/div/button')
-                            #pag.click('//*[@id="btn-cookie"]')
                             pag.click('xpath=//*[@id="header"]/div/button')
-                            #time.sleep(1000000)
-
-                            # vezes_tab = 10
-                            # for _ in range(vezes_tab):
-                            #     pag.keyboard.press('Tab')
-                            # pag.keyboard.press('Enter')
                             
+
+                                                                              
                             time.sleep(15)
                             vezes_tab_nome = 53
                             for _ in range(vezes_tab_nome):
@@ -288,4 +280,4 @@ while True:
         finally:
                 nav.close()    
         
-    #print(nome, email, celular, cpf, nascimento)
+    
